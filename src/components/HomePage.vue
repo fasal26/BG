@@ -69,7 +69,7 @@
           </div>
       </div>
   </div>
-  <div class="doc-padding prd-container">
+  <div class="prd-container">
     <h1> Our products </h1>
         <img src="../Assets/right.png" alt="" class="pointer" @click="handleSlide('prd-img-id')">
     <div class="prd-img-container" id="prd-img-id" style="scroll-behavior: smooth;">
