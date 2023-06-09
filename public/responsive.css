@@ -140,9 +140,13 @@
         padding-top: 69px;
     }
 
+    .prd-container{
+        padding: 65px 25px;
+    }
+
     .prd-container > img{
         right: 7px;
-        bottom: 151px;
+        bottom: 155px;
     }
 
     .doc-none{
