@@ -13,6 +13,9 @@
     border-radius: 50px;
 }
 
+.abt-cntnt{
+    max-width: 50%;
+}
 
 .abt-cntnt > h2{
     position: relative;
