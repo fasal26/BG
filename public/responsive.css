@@ -27,6 +27,8 @@
 
     .desc-container > ul {
         justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .baba-abtus {
@@ -48,6 +50,10 @@
 
     .baba-abtus-mob{
         margin-top: 20px;
+    }
+
+    .abt-cntnt {
+        max-width: initial;
     }
 
     .abt-cntnt > h2 {
@@ -119,6 +125,24 @@
     .store {
         gap: 0;
         justify-content: space-evenly;
+    }
+    
+    .prd-img-container {
+        aspect-ratio: initial;
+    }
+    
+    .prd-img {
+        min-width: 70%;
+        height: 320px;
+    }
+
+    .prd-container{
+        padding-top: 69px;
+    }
+
+    .prd-container > img{
+        right: 7px;
+        bottom: 151px;
     }
 
     .doc-none{

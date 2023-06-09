@@ -24,8 +24,6 @@ import { ref, onMounted } from "vue"
 import MobileNavbar from './MobileNavbar.vue';
 const route = useRoute()
 const router = useRouter()
-let displayFlg = document.getElementById('dlg')
-let menu = document.getElementById('burger')
 
 let isMounted = ref(false)
 onMounted(() => {
@@ -33,6 +31,8 @@ onMounted(() => {
 })
 
 function openMenu(evt){
+    let displayFlg = document.getElementById('dlg')
+    let menu = document.getElementById('burger')
     if(evt.target == menu){
         displayFlg.style.display = 'block'
         document.body.style.overflow = 'hidden'
@@ -55,6 +55,7 @@ function handleRoute(path){
     router.push(path)
 }
 function scrollInto(id){
+    let displayFlg = document.getElementById('dlg')
     if(id){
         if(displayFlg) displayFlg.style.display = 'none'
         document.body.style.overflow = 'auto'

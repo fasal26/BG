@@ -1,6 +1,6 @@
 <template>
     <div class="baba-flex baba-abtus">
-          <img src="../Assets/scottsdale-mint2.jpg" alt="">
+          <img src="../Assets/scottsdale-mint2.jpg" alt="" class="abtus-rt">
           <div class="baba-flex-col abt-cntnt">
               <h2>About Us</h2>
               <p>
@@ -34,6 +34,10 @@ onMounted(() => {
 .baba-abtus{
     padding-top: 150px;
     align-items: center;
+}
+
+.abtus-rt{
+    width: 100%;
 }
 
 </style>
