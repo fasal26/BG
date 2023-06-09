@@ -4,16 +4,24 @@
   <meta charset="UTF-8">
   <script>
     // Load the JavaScript router
-    window.addEventListener('DOMContentLoaded', function() {
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', '/BG/assets/index-d012f873.js', true); // Adjust the path to your app.js file
-      xhr.onload = function() {
-        if (xhr.status === 200) {
-          eval(xhr.responseText);
-        }
-      };
-      xhr.send();
-    });
+    // window.addEventListener('DOMContentLoaded', function() {
+    //   var xhr = new XMLHttpRequest();
+    //   xhr.open('GET', '/BG/assets/index-d012f873.js', true); // Adjust the path to your app.js file
+    //   xhr.onload = function() {
+    //     if (xhr.status === 200) {
+    //       eval(xhr.responseText);
+    //     }
+    //   };
+    //   xhr.send();
+    // });
+        (function() {
+        var script = document.createElement('script');
+        script.src = '/BG/assets/index-10bbea88.js'; // Adjust the path to your JavaScript bundle file
+        script.onload = function() {
+            // Initialize your Vue.js app and router here if needed
+        };
+        document.head.appendChild(script);
+        })();
   </script>
 </head>
 <body>
