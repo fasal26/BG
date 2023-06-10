@@ -61,6 +61,10 @@
         padding-top: 20px;
     }
 
+    .abt-cntnt > p {
+        width: initial;
+    }
+
     .baba-svc-container {
         flex-direction: column;
     }
@@ -136,9 +140,9 @@
         height: 320px;
     }
 
-    .prd-container{
+    /* .prd-container{
         padding-top: 69px;
-    }
+    } */
 
     .prd-container{
         padding: 65px 25px;
