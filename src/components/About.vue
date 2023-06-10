@@ -36,8 +36,8 @@ onMounted(() => {
     align-items: center;
 }
 
-.abtus-rt{
+/* .abtus-rt{
     width: 100%;
-}
+} */
 
 </style>

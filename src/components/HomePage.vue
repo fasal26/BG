@@ -70,7 +70,7 @@
       </div>
   </div>
   <div class="prd-container">
-    <h1> Our products </h1>
+    <h1> Our Products </h1>
         <img src="../Assets/right.png" alt="" class="pointer" @click="handleSlide('prd-img-id')">
     <div class="prd-img-container" id="prd-img-id" style="scroll-behavior: smooth;">
         <div class="prd-img baba-flex-col">
