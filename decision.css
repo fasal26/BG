@@ -1,0 +1,13 @@
+.decision-container{
+    padding: 100px 120px 0;
+}
+
+.decision-container > h2{
+    display: flex;
+    justify-content: center;
+    color: var(--color-dark-gold);
+}
+
+.decision-container > p{
+    padding: 40px 0;
+}

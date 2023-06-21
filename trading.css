@@ -1,0 +1,15 @@
+.trading-container{
+    padding: 100px 120px 0;
+}
+
+.trading-container > h1{
+    display: flex;
+    justify-content: center;
+    color: var(--color-dark-gold);
+}
+
+.trading-container > h3{
+    color: var(--sa-custom-v1);
+    padding: 25px 0;
+    justify-content: center;
+}

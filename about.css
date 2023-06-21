@@ -2,6 +2,15 @@
     margin: 130px 0 50px 0;
 }
 
+.baba-abtus-desc{
+    padding: 100px 150px 0;
+}
+
+.baba-abtus-desc > p{
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
 .baba-abtus{
     padding: 0 150px;
     gap: 60px;
