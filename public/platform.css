@@ -1,0 +1,37 @@
+.platfm-container{
+    padding: 100px 120px 0;
+}
+
+.platfm-container > h1{
+    display: flex;
+    justify-content: center;
+    color: var(--color-dark-gold);
+    padding-bottom: 60px;
+}
+
+.platfm-container > p{
+    padding-bottom: 25px;
+}
+
+.pltfm-head{
+    padding-bottom: 15px;
+    color: #9f9c96;
+}
+
+.pltfm-list > strong{
+    flex: 1 1 0;
+    color: var(--sa-custom-v1);
+}
+
+.pltfm-list{
+    gap: 15px;
+}
+
+.pltfm-list > p{
+    flex: 4 1 0;
+    padding-bottom: 15px;
+}
+
+.platfm-buysell{
+    margin-bottom: 30px;
+}

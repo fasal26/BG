@@ -6,7 +6,11 @@
 @import "/public/services.css";
 @import "/public/footer.css";
 @import "/public/projects.css";
-@import "/public/responsive.css"; 
+@import "/public/platform.css";
+@import "/public/factors.css";
+@import "/public/trading.css";
+@import "/public/decision.css";
+@import "/public/responsive.css";
 /* @import "review.css";
 @import "oncology.css";
 @import "blog.css";
@@ -48,6 +52,18 @@ hr {
   border-top: 2px solid #ffffff;
   width: 75%;
   margin: 0 auto 60px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.pt-100{
+  padding-top: 100px;
+}
+
+.pt-150{
+  padding-top: 150px;
 }
 
 .scale-up-center {
@@ -119,6 +135,28 @@ hr {
   background: transparent;
   position: absolute;
   width: 63%;
+}
+
+.read-more{
+  color: #09427e;
+  font-weight: 500;
+  position: relative;
+  width: fit-content;
+}
+.read-more:after{
+  content: "";
+  width: 0;
+  display: block;
+  height: 1.5px;
+  background-color: #09427e;
+  transition: width 0.3s ease-in;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.read-more:hover:after{
+  width: 100%;
 }
 
 @keyframes slide-in {  from {transform: translateX(100%)}  to {transform: translateX(0)}}

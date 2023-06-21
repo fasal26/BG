@@ -9,8 +9,10 @@
                 :style="getColor() ">Home</p>
             <p class="pointer underline-anim" :class="$route.name && $route.name.includes('About') ? 'route-active' : ''" @click="handleRoute('/about')" 
                 :style="getColor()">About Us</p>
-            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('Services') ? 'route-active' : ''" @click="handleRoute('/services')" 
-                :style="getColor()">Services</p>
+            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('Mission') ? 'route-active' : ''" @click="handleRoute('/our-mission')" 
+                :style="getColor()">Our Mission</p>
+            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('Trading') ? 'route-active' : ''" @click="handleRoute('/trading')" 
+                :style="getColor()">Trading</p>
             <p class="pointer underline-anim" @click="scrollInto('footer')" 
                 :style="getColor()">Contact Us</p>
         </div>

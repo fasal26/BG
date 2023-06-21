@@ -12,10 +12,10 @@
           <div class="baba-flex-col abt-cntnt">
               <h2>About Us</h2>
               <p>
-                  At Baba Gold, we are committed to providing exceptional services and guidance to investors seeking to tap into the potential of bullion and forex trading. With a deep understanding of the gold market and extensive experience in forex trading
+                Baba Gold is the trusted name in bullion and impure gold trading. We are committed to delivering exceptional service and unrivalled quality to our valued customers. With a deep-rooted passion for the precious metal industry, we aim to provide a seamless and rewarding gold trading experience for individuals and businesses alike
               </p>
               <p>
-                  Our dedicated team is here to help you navigate the complexities of these lucrative markets.
+                Our team at Baba Gold comprises seasoned professionals with extensive expertise and knowledge in the bullion and impure gold market
               </p>
               <span class="pointer read-more" @click="handleRoute('/about')">read more</span>
           </div>
@@ -25,14 +25,29 @@
       <div class="baba-flex baba-abtus">
           <img src="../Assets/our-story.jpg" alt="">
           <div class="baba-flex-col abt-cntnt">
-              <h2>Our Story</h2>
+              <h2>Our Vision</h2>
               <p>
-                  Baba Gold was born out of a passion for unlocking the immense potential of bullion and forex gold trading. With a vision to empower individuals and businesses, we embarked on a journey to provide comprehensive services, innovative solutions, and expert guidance.
+                Baba Gold's vision is to be the leading authority and trusted partner in the global bullion and impure gold trading industry. We strive to set the gold standard for excellence, innovation, and customer satisfaction. We shape the future of gold trading with our unwavering commitment to integrity, reliability, and personalized service
               </p>
               <p>
                   Join us on our remarkable journey as we continue to redefine the possibilities of bullion and forex gold trading
               </p>
-              <span class="pointer read-more" @click="handleRoute('/our-story')">read more</span>
+              <span class="pointer read-more" @click="handleRoute('/our-vision')">read more</span>
+          </div>
+      </div>
+  </div>
+  <div class="baba-abtus-conatiner baba-abtus-mob">
+      <div class="baba-flex baba-abtus">
+          <img src="../Assets/scottsdale-mint2.jpg" alt="">
+          <div class="baba-flex-col abt-cntnt">
+              <h2>Our Mission</h2>
+              <p>
+                Baba Gold empowers individuals and businesses to navigate the world of bullion and impure gold trading with confidence. We are dedicated to providing exceptional service, offering the highest quality gold products, and fostering lasting relationships built on trust and integrity.
+              </p>
+              <p>
+                Guided by our passion for the precious metal industry, we strive to be the premier destination for gold trading. We serve as a reliable and knowledgeable partner for our customers. Our mission is rooted in three key pillars:
+              </p>
+              <span class="pointer read-more" @click="handleRoute('/our-mission')">read more</span>
           </div>
       </div>
   </div>
@@ -40,33 +55,39 @@
       <h2 class="baba-flex">Services</h2>
       <div class="baba-flex cards-container">
           <div class="baba-flex card">
-              <img src="../Assets/investment.png" alt="">
+              <img src="../Assets/gold.png" alt="">
               <div class="svc-cntnt">
-                  <h4>Diversify Your Portfolio</h4>
-                  <p>Gold has long been recognized as a valuable asset for diversifying investment portfolios. Our gold investment services provide you with access to a range of options, including physical bullion, gold ETFs, and mining stocks.</p>
+                  <h4>Designing the Gold and Silver Refinery</h4>
+                  <p>Our team of experts designs gold and silver refineries tailored to meet our clients' specific needs and requirements. We consider factors such as processing capacity, desired output quality, and cost-efficiency to create a refinery design that maximizes operational effectiveness
+                  <span class="pointer read-more" @click="handleServices('ser1')" style="margin-left: 10px">read more</span>
+                  </p>
               </div>
           </div>
           <div class="baba-flex card">
-              <img src="../Assets/wallet.png" alt="">
+              <img src="../Assets/gold.png" alt="">
               <div class="svc-cntnt">
-                  <h4>Store Your Wealth Securely</h4>
-                  <p>With Baba Gold, you can rest assured that your precious metals are stored securely. We offer storage solutions with trusted partners, ensuring your gold investments are protected in state-of-the-art facilities that prioritize safety and accessibility.</p>
+                  <h4>Designing the Gold and Silver Assay Lab</h4>
+                  <p>Baba Gold understands the importance of a well-designed and efficient assay lab for accurate and reliable gold and silver testing. Our gold and silver assay lab is designed to meet industry standards, ensuring precision, safety, and confidentiality throughout the testing process. Here is an overview of the key elements in our assay lab design
+                  <span class="pointer read-more" @click="handleServices('ser2')" style="margin-left: 10px">read more</span>
+                  </p>
               </div>
           </div>
           <div class="baba-flex card">
-              <img src="../Assets/statistics.png" alt="">
+              <img src="../Assets/gold.png" alt="">
               <div class="svc-cntnt">
-                  <h4>Access Global Markets</h4>
-                  <p>Take advantage of the largest financial market in the world through our forex trading services. With Baba Gold, you can access major currency pairs, commodities, and other financial instruments. Enjoy the flexibility of trading across different time zones and diversify your trading strategies</p>
+                  <h4>Designing the Value Addition Plant for Ingot Bars</h4>
+                  <p>At Baba Gold, our value addition plant is designed to cater to a wide range of ingot bar requirements. We understand the importance of offering diverse options to meet our clients' specific needs and preferences. Here are some of the types of ingot bars produced in our value addition plant
+                  <span class="pointer read-more" @click="handleServices('ser3')" style="margin-left: 10px">read more</span>
+                  </p>
               </div>
           </div>
-          <div class="baba-flex card">
-              <img src="../Assets/stock.png" alt="">
+          <!-- <div class="baba-flex card">
+              <img src="../Assets/gold.png" alt="">
               <div class="svc-cntnt">
                   <h4>Advanced Trading Tools</h4>
                   <p>We provide you with advanced trading platforms equipped with powerful tools and features. Analyze market trends, execute trades with precision, and monitor your positions in real-time. Our platforms are designed to enhance your trading experience & help you seize opportunities.</p>
               </div>
-          </div>
+          </div> -->
       </div>
   </div>
   <div class="prd-container">
@@ -103,6 +124,10 @@
         </div>
     </div>
   </div>
+  <Platform/>
+  <Factors/>
+  <Trading/>
+  <DescisionMaking/>
   <!-- <div class="baba-flex-col doc-padding desc-container">
     <h2 class="baba-flex">Why Choose Baba Gold?</h2>
     <p>Experience the power of gold: Discover the timeless allure and wealth-building potential of gold, a precious metal that has stood the test of time as a reliable investment.
@@ -127,6 +152,10 @@
 <script setup>
 import { onMounted } from 'vue';
 import { useRouter } from 'vue-router';
+import Platform from './Platform.vue';
+import Factors from './Factors.vue'
+import Trading from './Trading.vue'
+import DescisionMaking from './DescisionMaking.vue';
 const router = useRouter()
 
 onMounted(() => {
@@ -165,29 +194,8 @@ function handleSlide(id){
     slider.style.scrollBehavior = "smooth"
     slider.scrollLeft = slider.scrollLeft + 200
 }
+function handleServices(id){
+    router.push(`/services/${id}`)
+}
 
 </script>
-
-<style scoped>
-.read-more{
-    color: #09427e;
-    font-weight: 500;
-    position: relative;
-    width: fit-content;
-}
-.read-more:after{
-    content: "";
-    width: 0;
-    display: block;
-    height: 1.5px;
-    background-color: #09427e;
-    transition: width 0.3s ease-in;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-}
-
-.read-more:hover:after{
-  width: 100%;
-}
-</style>

@@ -41,10 +41,10 @@
                     <p>Support programs</p>
                     <p>Joined programs</p>
                 </div>
-                <div class="email">
+                <!-- <div class="email">
                     <input type="text" class="mail-input">
                     <button class="pointer">Submit</button>
-                </div>
+                </div> -->
             </div>
             <div class="social-media">
                 <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
