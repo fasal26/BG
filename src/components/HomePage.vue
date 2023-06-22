@@ -1,9 +1,11 @@
 <template>
   <div class="banner-container">
     <h1>Unlock the Power of Gold with <strong>Baba Gold</strong></h1>
-        <video width="100%" height="550px" autoplay loop muted playsinline style="object-fit: cover;width: 100%;height: 550px;">
+        <!-- <video width="100%" height="550px" autoplay loop muted playsinline style="object-fit: cover;width: 100%;height: 550px;">
             <source src="../Assets/pexels-crazy-motions-8733007-3840x2160-30fps.mp4" type="video/mp4">
             Your browser does not support the video tag.
+        </video> -->
+        <video src="../Assets/pexels-crazy-motions-8733007-3840x2160-30fps.mp4" width="100%" height="550px" autoplay loop muted playsinline style="object-fit: cover;width: 100%;height: 550px;">
         </video>
   </div>
   <div class="baba-abtus-conatiner">
