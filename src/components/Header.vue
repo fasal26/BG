@@ -4,7 +4,7 @@
         <div class="docdet-mob doc-padding" @click="openMenu">
             <img src="../Assets/bars-staggered.png" alt="menu" class="navbar_menu" id="burger">
         </div>
-        <img src="../Assets/baba gold trans.png" alt="" class="logo">
+        <img src="../Assets/babagoldtrans.png" alt="" class="logo">
         <div class="doc-flex nav-container">
             <p class="pointer underline-anim" :class="$route.name && $route.name.includes('HomePage') ? 'route-active' : ''" @click="handleRoute('/')" 
                 :style="getColor() ">Home</p>

@@ -26,26 +26,32 @@
                 <strong>Company</strong>
                 <ul class="baba-flex-col">
                     <li class="pointer">About Us</li>
-                    <li class="pointer">Contact Us</li>
-                    <li class="pointer">Services</li>
-                    <li class="pointer">FAQ</li>
+                    <!-- <li class="pointer">Contact Us</li> -->
+                    <li class="pointer">Our Mission</li>
+                    <li class="pointer">Trading</li>
                 </ul>
             </div>
         </div>
         <div class="footer-items2-container">
             <div class="news-letter baba-flex-col">
-                <strong>newsletter</strong>
-                <p>join our newsletter list and go on</p>
+                <!-- <strong>newsletter</strong> -->
+                <p>Contact details</p>
                 <div class="news-letter-items baba-flex">
-                    <p>Latest offers</p>
-                    <p>Support programs</p>
-                    <p>Joined programs</p>
+                    <p>+971 4 2501199</p>
+                    <p>+971 56 883 5211</p>
+                    <p>info@bgt-au.com</p>
+                </div>
+                <p>Address</p>
+                <div class="news-letter-items baba-flex">
+                    <p>Shop No 1, Sikka 28 Street Al Dhagaya, Near By Womens Museum, Gold Souq Behind Rak Bank, Dubai - U.A.E</p>
                 </div>
                 <!-- <div class="email">
                     <input type="text" class="mail-input">
                     <button class="pointer">Submit</button>
                 </div> -->
             </div>
+        </div>
+        <div class="footer-items2-container">
             <div class="social-media">
                 <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/>
                 <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/linkedin-circled--v1.png" alt="linkedin-circled--v1"/>

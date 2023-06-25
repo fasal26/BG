@@ -97,23 +97,23 @@
         <img src="../Assets/right.png" alt="" class="pointer" @click="handleSlide('prd-img-id')">
     <div class="prd-img-container" id="prd-img-id" style="scroll-behavior: smooth;">
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/1 kg.jpg" alt="gold bar">
+            <img src="../Assets/1kg.jpg" alt="gold bar">
             <small>Gold bar 1 kg</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/gold bar 1 KD 999.jpg" alt="gold bar">
+            <img src="../Assets/goldbar1KD999.jpg" alt="gold bar">
             <small>Gold bar 1 KD 999</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/gold bar 1 KG 995.jpg" alt="gold bar">
+            <img src="../Assets/goldbar1KG995.jpg" alt="gold bar">
             <small>Gold bar 1 KG 995</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/gold bar 500 GM.jpg" alt="gold bar">
+            <img src="../Assets/goldbar500GM.jpg" alt="gold bar">
             <small>Gold bar 500 GM</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/gold bar blank 10 TOLA.jpg" alt="gold bar">
+            <img src="../Assets/goldbarblank10TOLA.jpg" alt="gold bar">
             <small>Gold bar 10 TOLA</small>
         </div>
         <!-- <div class="prd-img baba-flex-col">
