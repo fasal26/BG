@@ -33,6 +33,7 @@
     padding: 20px;
     gap: 20px;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .prd-img img{
