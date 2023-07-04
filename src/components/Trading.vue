@@ -91,7 +91,7 @@
                 </p>
             </div>
             <div class="baba-flex pltfm-list">
-                <strong>.Practice Risk Management :</strong>
+                <strong>Practice Risk Management :</strong>
                 <p>
                     Implement risk management techniques, such as setting stop-loss orders and determining the appropriate position sizes for each trade. Managing risk is crucial to preserving capital and avoiding significant losses.
                 </p>

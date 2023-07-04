@@ -32,7 +32,7 @@
                 Baba Gold's vision is to be the leading authority and trusted partner in the global bullion and impure gold trading industry. We strive to set the gold standard for excellence, innovation, and customer satisfaction. We shape the future of gold trading with our unwavering commitment to integrity, reliability, and personalized service
               </p>
               <p>
-                  Join us on our remarkable journey as we continue to redefine the possibilities of bullion and forex gold trading
+                  Join us on our remarkable journey as we continue to redefine the possibilities of bullion and gold trading
               </p>
               <span class="pointer read-more" @click="handleRoute('/our-vision')">read more</span>
           </div>

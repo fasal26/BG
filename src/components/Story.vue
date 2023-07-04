@@ -57,6 +57,8 @@
   </div>
 </template>
 
+<script></script>
+
 <style scoped>
 /* .baba-abtus {
   padding-top: 150px;
