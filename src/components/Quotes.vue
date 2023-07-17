@@ -1,16 +1,21 @@
 <template>
     <div class="glry-container">
         <Carousel :autoplay="4000" :wrap-around="true">
-            <Slide v-for="item in images" :key="item">
+            <Slide key="1">
                 <div class="carousel__item">
-                    <img :src="item" class="quote-img" alt="gold" />
+                    <img src="../Assets/quote1.jpg" class="quote-img" alt="gold" />
                 </div>
-                <!-- {{ item }}fasal -->
             </Slide>
-            <template #addons>
-                <!-- <Navigation /> -->
-                <!-- <Pagination /> -->
-            </template>
+            <Slide key="2">
+                <div class="carousel__item">
+                    <img src="../Assets/quote2.jpg" class="quote-img" alt="gold" />
+                </div>
+            </Slide>
+            <Slide key="3">
+                <div class="carousel__item">
+                    <img src="../Assets/quote3.jpg" class="quote-img" alt="gold" />
+                </div>
+            </Slide>
         </Carousel>
     </div>
 </template>
