@@ -13,3 +13,155 @@
     padding: 25px 0;
     justify-content: center;
 }
+
+.key-evt-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.key-evt-container > h1{
+    text-align: center;
+    color: var(--sa-custom-v1);;
+}
+
+.key-evt-ctnt > h2{
+    padding-bottom: 20px;
+    color: var(--sa-custom-v1);;
+}
+
+.trading-tips-container{
+    flex-direction: column;
+    display: flex;
+    gap: 40px;
+}
+
+.trading-tips-container > h1{
+    padding-bottom: 30px;
+    color: var(--color-dark-gold);
+    text-align: center;
+}
+
+.trading-tips-container h3{
+    color: var(--sa-custom-v1);
+}
+
+.trading-tips{
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+}
+
+.trading-tips > ul{
+    margin-left: 45px;
+}
+
+.trading-tips > ul > li{
+    padding-bottom: 10px;
+}
+
+.price-action{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.child-list{
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+
+.child-list > li{
+    padding-bottom: 7px;
+}
+
+.account-forum-container > h1{
+    padding-bottom: 30px;
+}
+
+.account-forum-container > details{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: all 1.5 linear;
+}
+
+.account-forum-container ul{
+    margin-left: 35px;
+    flex-direction: column;
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+}
+
+.policies-container > h1{
+    padding-bottom: 50px;
+    text-align: center;
+    color: var(--color-dark-gold);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+th{
+    color: var(--sa-custom-v1);
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.pdf-container{
+    width: 75%;
+    margin: auto;
+}
+
+.quality-container > h1{
+    padding-bottom: 50px;
+    color: var(--color-dark-gold);
+    text-align: center;
+}
+
+.bar-spec-container{
+    flex-direction: column;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.bar-head{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-head > h2{
+    color: var(--color-dark-gold);
+}
+
+.bar-head > h5{
+    color: var(--sa-custom-v1);
+}
+
+.route-padd{
+    padding: 150px 120px 0;
+}

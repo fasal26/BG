@@ -169,6 +169,18 @@
         height: 80px;
     }
 
+    .route-padd {
+        padding: 150px 20px 0;
+    }
+
+    .pdf-container {
+        width: 100%;
+    }
+
+    .drp-dwn-container {
+        position: initial;
+    }
+
     /* THE END */
 
     .doc-none{

@@ -10,10 +10,21 @@
                 :style="getColor() ">Home</p>
             <p class="pointer underline-anim" :class="$route.name && $route.name.includes('About') ? 'route-active' : ''" @click="handleRoute('/about')" 
                 :style="getColor()">About Us</p>
-            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('Mission') ? 'route-active' : ''" @click="handleRoute('/our-mission')" 
-                :style="getColor()">Our Mission</p>
-            <p class="pointer underline-anim" :class="$route.name && $route.name.includes('Trading') ? 'route-active' : ''" @click="handleRoute('/trading')" 
-                :style="getColor()">Trading</p>
+            <div class="nav-itm-container" @mouseover="handleMouse('mouseover','trading')" @mouseleave="handleMouse('mouseleave','trading')">
+                <p class="pointer underline-anim" :style="getColor()"
+                    :class="($route.name && $route.name.includes('events')) ? 'route-active' : ''"
+                    @click="hndlDrpDwn('isTrading')">Trading</p>
+                    <img src="../Assets/down-arrow-wh.png" alt="">
+                <div class="drp-dwn-container" :style="getColor('background')" v-if="isTrading">
+                    <ul>
+                        <li @click.self="handleRoute('/key-events')" :style="getColor('events')" class="pointer" >Key events</li>
+                        <li @click.self="handleRoute('/trading-tips')" :style="getColor('trading')" class="pointer">Trading tips</li>
+                        <li @click.self="handleRoute('/account-forum')" :style="getColor('account')" class="pointer">Account Opening</li>
+                        <li @click.self="handleRoute('/policies')" :style="getColor('policies')" class="pointer">Fiscial & Monetary Policy</li>
+                        <li @click.self="handleRoute('/quality-params')" :style="getColor('params')" class="pointer">Quality Parameter</li>
+                    </ul>
+                </div>
+            </div>
             <p class="pointer underline-anim" @click="scrollInto('footer')" 
                 :style="getColor()">Contact Us</p>
         </div>
@@ -41,22 +52,44 @@ function openMenu(evt){
         document.body.style.overflow = 'hidden'
     }
 }
-function getColor(){
+function getColor(type){
     if(route.path != '/'){
+        if(type == 'background'){
+            return 'background-color:#ffffff;'
+        }else if(route.path.includes(type)){
+            return 'background-color:#ccd5d5;color:black'
+        }
         return 'color:initial;'
-    }else{
-        'color:var(--color-bg);'
     }
 }
 function handleRoute(path){
-    let element = document.querySelectorAll('.underline-anim')
-    console.log(element,'element');
-    // for(let el of element){
-    //     el.style.setProperty('--underline', 'blue')
-    // }
-    console.log(element,'element');
+    isTrading.value = false
     router.push(path)
 }
+
+let isTrading = ref(false)
+function handleMouse(type,val){
+    switch (val) {
+        case 'trading':
+            isTrading.value = type == 'mouseover' ? true : false
+            break;
+        // case 'service':
+        //     srvcFlg.value = type == 'mouseover' ? true : false
+        //     break;
+        // case 'eservice':
+        //     EsrvcFlg.value = type == 'mouseover' ? true : false
+        //     break;
+    
+        default:
+            break;
+    }
+}
+function hndlDrpDwn(flg){
+    if(flg == 'isTrading'){
+        isTrading.value = !isTrading.value
+    }
+}
+
 function scrollInto(id){
     let displayFlg = document.getElementById('dlg')
     if(id){
@@ -75,7 +108,6 @@ function scrollInto(id){
 .route-active:after{
     width: 100%;
 }
-
 .logo{
     height: 120px;
     width: 100px;

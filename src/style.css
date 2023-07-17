@@ -10,6 +10,7 @@
 @import "/public/factors.css";
 @import "/public/trading.css";
 @import "/public/decision.css";
+@import "/public/gallery.css";
 @import "/public/responsive.css";
 /* @import "review.css";
 @import "oncology.css";
@@ -103,16 +104,19 @@ p {
 }
 
 .dialog-items-container{
-  margin-top: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .dialog-items-container > p{
   padding-bottom: 20px;
 }
 
-.dialog-items{
+/* .dialog-items{
   padding-bottom: 30px;
-}
+} */
 
 .dialog-items > p{
   padding-left: 22px;

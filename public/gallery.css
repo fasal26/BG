@@ -1,0 +1,28 @@
+.glry-container{
+    padding: 100px 120px;
+    background: #ffffff;
+    margin: 100px 0;
+}
+
+.glry-container > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    font-size: 50px;
+    color: var(--color-dark-gold);
+}
+
+.glry-img {
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    border-radius: 15px;
+    object-fit: fill;
+}
+
+.quote-img {
+    width: 750px;
+    aspect-ratio: 2 / 1;
+    border-radius: 15px;
+    object-fit: fill;
+}

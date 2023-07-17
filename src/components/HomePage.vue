@@ -97,38 +97,40 @@
         <img src="../Assets/right.png" alt="" class="pointer" @click="handleSlide('prd-img-id')">
     <div class="prd-img-container" id="prd-img-id" style="scroll-behavior: smooth;">
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/1kg.jpg" alt="gold bar">
-            <small>Gold bar 1 kg</small>
+            <img src="../Assets/prd1.png" alt="gold bar">
+            <small>50 gm 999.9</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/goldbar1KD999.jpg" alt="gold bar">
-            <small>Gold bar 1 KD 999</small>
+            <img src="../Assets/prd2.png" alt="gold bar">
+            <small>100 gm 999.9</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/goldbar1KG995.jpg" alt="gold bar">
-            <small>Gold bar 1 KG 995</small>
+            <img src="../Assets/prd3.png" alt="gold bar">
+            <small>250 gm 999.9</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/goldbar500GM.jpg" alt="gold bar">
-            <small>Gold bar 500 GM</small>
+            <img src="../Assets/prd4.png" alt="gold bar">
+            <small>500 gm 99.9</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/goldbarblank10TOLA.jpg" alt="gold bar">
-            <small>Gold bar 10 TOLA</small>
-        </div>
-        <!-- <div class="prd-img baba-flex-col">
-            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
-            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
+            <img src="../Assets/prd5.jpg" alt="gold bar">
+            <small>Kilo bar 995</small>
         </div>
         <div class="prd-img baba-flex-col">
-            <img src="../Assets/Single-Gold-Bar-PNG-Photos.png" alt="gold bar">
-            <small>Emirates 1 Gram 999.9 Purity Gold Bar</small>
-        </div> -->
+            <img src="../Assets/prd6.png" alt="gold bar">
+            <small>Kilo bar 999.9</small>
+        </div>
+        <div class="prd-img baba-flex-col">
+            <img src="../Assets/prd7.png" alt="gold bar">
+            <small>Ten tola bar 999.9</small>
+        </div>
     </div>
   </div>
+  <Gallery/>
   <Platform/>
   <Factors/>
   <Trading/>
+  <Quotes/>
   <DescisionMaking/>
   <!-- <div class="baba-flex-col doc-padding desc-container">
     <h2 class="baba-flex">Why Choose Baba Gold?</h2>
@@ -158,6 +160,8 @@ import Platform from './Platform.vue';
 import Factors from './Factors.vue'
 import Trading from './Trading.vue'
 import DescisionMaking from './DescisionMaking.vue';
+import Gallery from './Gallery.vue';
+import Quotes from './Quotes.vue';
 const router = useRouter()
 
 onMounted(() => {
