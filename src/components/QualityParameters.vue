@@ -2,7 +2,7 @@
     <div class="quality-container route-padd">
         <h1>Quality Parameters</h1>
         <div class="pdf-container">
-            <vue-pdf-embed :source="source1" class="pdf-data"/>
+            <vue-pdf-embed source="../Assets/ALLOYDOWNFORMULA.pdf" class="pdf-data"/>
         </div>
         <div class="bar-spec-container">
             <div class="bar-head">
