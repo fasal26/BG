@@ -22,6 +22,11 @@ const TradingTips = () => import("../components/TradingTips.vue")
 const AccountForum = () => import("../components/AccountForum.vue")
 const Policies = () => import("../components/Policies.vue")
 const QualityParameters = () => import("../components/QualityParameters.vue")
+const EBooks = () => import("../components/EBooks.vue")
+const GoldBuyingTime = () => import("../components/GoldBuyingTime.vue")
+const FunctionalLinks = () => import("../components/FunctionalLinks.vue")
+const EconomicRings = () => import("../components/EconomicRings.vue")
+const YoutubeVideos = () => import("../components/YoutubeVideos.vue")
 export function createRouter() {
     const router =  _createRouter({
         history: createWebHistory('/BG/'),
@@ -31,7 +36,7 @@ export function createRouter() {
             { path: "/about", name: 'About', component: About },
             { path: "/our-vision", name: 'Our Vision', component: Story },
             { path: "/our-mission", name: 'Our Mission', component: Mission },
-            { path: "/services/:id", name: 'Services', component: Services },
+            { path: "/services", name: 'Services', component: Services },
             { path: "/trading", name: 'Trading', component: Trading },
             { path: "/decision-making", name: 'DecisionMaking', component: DecisionMaking },
             { path: "/platform", name: 'Platform', component: Platform },
@@ -41,6 +46,11 @@ export function createRouter() {
             { path: "/account-forum", name: 'Account Opening Forum', component: AccountForum },
             { path: "/policies", name: 'Policies', component: Policies },
             { path: "/quality-params", name: 'Quality Parameters', component: QualityParameters },
+            { path: "/e-book", name: 'E books', component: EBooks },
+            { path: "/buy-gold", name: 'Auspicious time to buy gold', component: GoldBuyingTime },
+            { path: "/functional-links", name: 'Functional Links', component: FunctionalLinks },
+            { path: "/economic-rings", name: 'Economic Rings', component: EconomicRings },
+            { path: "/videos", name: 'Videos', component: YoutubeVideos },
             // { path: '/:pathMatch(.*)*', redirect: "/" },
         ],
         scrollBehavior() {

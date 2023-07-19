@@ -25,6 +25,25 @@
                     </ul>
                 </div>
             </div>
+            <p class="pointer underline-anim" @click="handleWindow('https://hellopuregold.bullionview.com/web')" 
+                :style="getColor()">Live rate</p>
+            <p class="pointer underline-anim" @click="handleRoute('/e-book')" 
+                :style="getColor()">E books</p>
+            <div class="nav-itm-container" @mouseover="handleMouse('mouseover','more')" @mouseleave="handleMouse('mouseleave','more')">
+                <p class="pointer underline-anim" :style="getColor()"
+                    :class="($route.name && $route.name.includes('events')) ? 'route-active' : ''"
+                    @click="hndlDrpDwn('isMore')">More</p>
+                    <img src="../Assets/down-arrow-wh.png" alt="">
+                <div class="drp-dwn-container" :style="getColor('background')" v-if="isMore">
+                    <ul>
+                        <li @click.self="handleRoute('/buy-gold')" :style="getColor('gold')" class="pointer" >Auspicious time to buy gold</li>
+                        <li @click.self="handleRoute('/economic-rings')" :style="getColor('economic')" class="pointer">Economic rings</li>
+                        <li @click.self="handleRoute('/functional-links')" :style="getColor('functional')" class="pointer">Functional links</li>
+                        <li @click.self="handleRoute('/videos')" :style="getColor('videos')" class="pointer">Videos</li>
+                        <li :style="getColor('params')" class="pointer">Zakat calculator</li>
+                    </ul>
+                </div>
+            </div>
             <p class="pointer underline-anim" @click="scrollInto('footer')" 
                 :style="getColor()">Contact Us</p>
         </div>
@@ -62,20 +81,29 @@ function getColor(type){
         return 'color:initial;'
     }
 }
+function handleWindow(path){
+    isTrading.value = false
+    isMore.value = false
+    window.open(path)
+}
 function handleRoute(path){
     isTrading.value = false
+    isMore.value = false
     router.push(path)
 }
 
 let isTrading = ref(false)
+let isMore = ref(false)
 function handleMouse(type,val){
     switch (val) {
         case 'trading':
             isTrading.value = type == 'mouseover' ? true : false
+            isMore.value = false
             break;
-        // case 'service':
-        //     srvcFlg.value = type == 'mouseover' ? true : false
-        //     break;
+        case 'more':
+            isMore.value = type == 'mouseover' ? true : false
+            isTrading.value = false
+            break;
         // case 'eservice':
         //     EsrvcFlg.value = type == 'mouseover' ? true : false
         //     break;
@@ -87,6 +115,11 @@ function handleMouse(type,val){
 function hndlDrpDwn(flg){
     if(flg == 'isTrading'){
         isTrading.value = !isTrading.value
+        isMore.value = false
+    }
+    if(flg == 'isMore'){
+        isMore.value = !isMore.value
+        isTrading.value = false
     }
 }
 

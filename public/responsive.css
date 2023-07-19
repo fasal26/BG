@@ -71,6 +71,7 @@
 
     .baba-svc-container {
         flex-direction: column;
+        padding: 100px 25px;
     }
 
     .baba-svc-container > h2 {
@@ -179,6 +180,32 @@
 
     .drp-dwn-container {
         position: initial;
+    }
+
+    .srv-parent{
+        flex-direction: column;
+        gap: 40px;
+        padding: initial;
+    }
+
+    .sv-img, .sv-img-single {
+        border-radius: 25px;
+    }
+
+    .glry-container {
+        padding: 50px 20px;
+    }
+
+    .quote-img {
+        width: 100%;
+    }
+
+    .glry-img {
+        width: 90%;
+    }
+
+    .baba-srvc-conatiner {
+        margin-bottom: 30px;
     }
 
     /* THE END */

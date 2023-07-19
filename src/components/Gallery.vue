@@ -1,7 +1,7 @@
 <template>
     <div class="glry-container">
         <h1>Gallery</h1>
-        <Carousel :items-to-show="3" :autoplay="2000" :wrap-around="true">
+        <Carousel :items-to-show="itmToShow" :autoplay="2000" :wrap-around="true">
             <Slide key="1">
                 <div class="carousel__item">
                     <img src="../Assets/gallery1.jpg" class="glry-img" alt="gold" />
@@ -84,7 +84,7 @@
 <script setup>
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
-import { ref } from 'vue';
+import { ref,onMounted } from 'vue';
 
 let images = ref([
     'src/Assets/gallery1.jpg',
@@ -103,4 +103,8 @@ let images = ref([
     'src/Assets/gallery14.jpg',
     'src/Assets/gallery15.jpg',
 ])
+let itmToShow = ref("1")
+onMounted(() => {
+    itmToShow.value = screen.width <= 768 ? '1' : '3'
+})
 </script>

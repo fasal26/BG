@@ -12,6 +12,7 @@
 @import "/public/decision.css";
 @import "/public/gallery.css";
 @import "/public/responsive.css";
+@import "/public/more.css";
 /* @import "review.css";
 @import "oncology.css";
 @import "blog.css";
@@ -90,6 +91,11 @@ p {
 
 .baba-flex{
   display: flex;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
 }
 
 .sa-dialog p{

@@ -22,7 +22,7 @@
 
 .key-evt-container > h1{
     text-align: center;
-    color: var(--sa-custom-v1);;
+    color: var(--color-dark-gold);
 }
 
 .key-evt-ctnt > h2{
@@ -76,7 +76,9 @@
 }
 
 .account-forum-container > h1{
+    color: var(--color-dark-gold);
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .account-forum-container > details{

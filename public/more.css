@@ -1,0 +1,49 @@
+.links-container{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 70px;
+    border-radius: 20px; 
+    gap: 30px;
+}
+
+.links{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+    gap: 20px;
+}
+
+.youtube-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.youtube-list > iframe{
+    flex-basis: 30%;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.timing-container{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 60px;
+}
+
+.timings{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.timings > h4{
+    color: var(--sa-custom-v1);
+}

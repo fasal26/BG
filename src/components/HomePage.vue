@@ -23,7 +23,8 @@
           </div>
       </div>
   </div>
-  <div class="baba-abtus-conatiner baba-abtus-mob">
+  <Gallery/>
+  <!-- <div class="baba-abtus-conatiner baba-abtus-mob">
       <div class="baba-flex baba-abtus">
           <img src="../Assets/our-story.jpg" alt="">
           <div class="baba-flex-col abt-cntnt">
@@ -52,8 +53,8 @@
               <span class="pointer read-more" @click="handleRoute('/our-mission')">read more</span>
           </div>
       </div>
-  </div>
-  <div class="baba-flex-col doc-padding baba-svc-container" id="services">
+  </div> -->
+  <!-- <div class="baba-flex-col doc-padding baba-svc-container" id="services">
       <h2 class="baba-flex">Services</h2>
       <div class="baba-flex cards-container">
           <div class="baba-flex card">
@@ -83,15 +84,15 @@
                   </p>
               </div>
           </div>
-          <!-- <div class="baba-flex card">
+          <div class="baba-flex card">
               <img src="../Assets/gold.png" alt="">
               <div class="svc-cntnt">
                   <h4>Advanced Trading Tools</h4>
                   <p>We provide you with advanced trading platforms equipped with powerful tools and features. Analyze market trends, execute trades with precision, and monitor your positions in real-time. Our platforms are designed to enhance your trading experience & help you seize opportunities.</p>
               </div>
-          </div> -->
+          </div>
       </div>
-  </div>
+  </div> -->
   <div class="prd-container">
     <h1> Our Products </h1>
         <img src="../Assets/right.png" alt="" class="pointer" @click="handleSlide('prd-img-id')">
@@ -126,12 +127,41 @@
         </div>
     </div>
   </div>
-  <Gallery/>
-  <Platform/>
-  <Factors/>
-  <Trading/>
+  <!-- <Platform/> -->
+  <!-- <Factors/> -->
+  <!-- <Trading/> -->
   <Quotes/>
-  <DescisionMaking/>
+  <div class="baba-abtus-conatiner">
+      <div class="baba-flex baba-abtus">
+          <div class="srvc-img">
+            <Carousel :items-to-show="1" :autoplay="2000" :wrap-around="true">
+                <Slide key="1">
+                    <div class="carousel__item">
+                        <img src="/assets/assay2.jpg" class="sv-img" alt="gold" />
+                    </div>
+                </Slide>
+                <Slide key="2">
+                    <div class="carousel__item">
+                        <img src="/assets/refinary.jpg" class="sv-img" alt="gold" />
+                    </div>
+                </Slide>
+                <Slide key="3">
+                    <div class="carousel__item">
+                        <img src="/assets/valueaddedplant.jpg" class="sv-img" alt="gold" />
+                    </div>
+                </Slide>
+            </Carousel>
+          </div>
+          <div class="baba-flex-col abt-cntnt abt-cntnt-srvc">
+              <h2>Services</h2>
+              <p>
+                At Baba Gold, we offer a comprehensive range of services to cater to all your gold trading needs. With years of experience in the industry and a team of expert professionals, we are dedicated to providing you with a seamless and rewarding trading experience. Whether you are a seasoned investor or a first-time trader, we have tailored services to assist you in achieving your financial goals.
+              </p>
+              <span class="pointer read-more" @click="handleRoute('/services')">read more</span>
+          </div>
+      </div>
+  </div>
+  <!-- <DescisionMaking/> -->
   <!-- <div class="baba-flex-col doc-padding desc-container">
     <h2 class="baba-flex">Why Choose Baba Gold?</h2>
     <p>Experience the power of gold: Discover the timeless allure and wealth-building potential of gold, a precious metal that has stood the test of time as a reliable investment.
@@ -154,18 +184,25 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
+import Gallery from './Gallery.vue';
+import Quotes from './Quotes.vue';
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
+import DescisionMaking from './DescisionMaking.vue';
 import Platform from './Platform.vue';
 import Factors from './Factors.vue'
 import Trading from './Trading.vue'
-import DescisionMaking from './DescisionMaking.vue';
-import Gallery from './Gallery.vue';
-import Quotes from './Quotes.vue';
 const router = useRouter()
 
 onMounted(() => {
     carousel('prd-img-id')
+})
+
+let settings = ref({
+    itemsToShow: 1,
+    snapAlign: 'center',
 })
 
 function handleRoute(path){
