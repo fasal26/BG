@@ -1,7 +1,7 @@
 .glry-container{
     padding: 100px 120px;
     background: #ffffff;
-    margin: 100px 0;
+    margin: 100px 0 0;
 }
 
 .glry-container > h1{
@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
-    font-size: 50px;
+    font-size: 40px;
     color: var(--color-dark-gold);
 }
 
