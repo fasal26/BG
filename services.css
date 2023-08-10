@@ -111,3 +111,15 @@
     text-decoration: none;
     color: black;
 }
+
+.carousel__item > p{
+    position: absolute;
+    bottom: 51px;
+    max-width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
