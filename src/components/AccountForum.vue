@@ -37,12 +37,25 @@
             </ul>
         </details>
        <details class="pointer">
-            <summary>DENTIFIES AND DETAILS OF ALL AUTHORIZED SIGNATORIES OF THE APPLICANT COMPANY (IF DIFFERENT FROM 4)</summary>
+            <summary>IDENTIFIES AND DETAILS OF ALL AUTHORIZED SIGNATORIES OF THE APPLICANT COMPANY (IF DIFFERENT FROM 4)</summary>
             <ul>
                 <li>Full Name(s)</li>
                 <li>Full Detail (Designation(s), Contact Number(s), Email ID’s)</li>
                 <li>Supporting document showing Specimen Signature </li>
             </ul>
+        </details>
+       <details class="pointer">
+            <summary>IDENTITIES AND ADDRESS OF ALL PERSONS AUTHORIZED TO DEAL ON BEHALF OF THE APPLICANT COMPANY (IF DIFFERENT FROM 4 AND 5) </summary>
+            <ul>
+                <li>Individuals holding Powers of Attorney from the Applicant Company; and </li>
+                <li>Third Party mandate holders of the Applicant Company </li>
+            </ul>
+        </details>
+       <details class="pointer">
+            <summary>BANK REFERENCE WHEREBY THE APPLICANT COMPANY HAS BEEN KNOWN BY BANK FOR AT LEAST TWO YEARS </summary>
+        </details>
+       <details class="pointer">
+            <summary>LAST TWO YEARS AUDITED APPICANT COMPANY ACCOUNTS </summary>
         </details>
     </div>
 </template>

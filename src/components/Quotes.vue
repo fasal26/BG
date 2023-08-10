@@ -16,6 +16,21 @@
                     <img src="../Assets/quote3.jpg" class="quote-img" alt="gold" />
                 </div>
             </Slide>
+            <Slide key="4">
+                <div class="carousel__item">
+                    <img src="../Assets/QuotesNew1.png" class="quote-img" alt="gold" />
+                </div>
+            </Slide>
+            <Slide key="5">
+                <div class="carousel__item">
+                    <img src="../Assets/QuotesNew2.png" class="quote-img" alt="gold" />
+                </div>
+            </Slide>
+            <Slide key="6">
+                <div class="carousel__item">
+                    <img src="../Assets/QuotesNew3.png" class="quote-img" alt="gold" />
+                </div>
+            </Slide>
         </Carousel>
     </div>
 </template>

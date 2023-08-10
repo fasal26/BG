@@ -22,10 +22,11 @@
                         <li @click.self="handleRoute('/account-forum')" :style="getColor('account')" class="pointer">Account Opening</li>
                         <li @click.self="handleRoute('/policies')" :style="getColor('policies')" class="pointer">Fiscial & Monetary Policy</li>
                         <li @click.self="handleRoute('/quality-params')" :style="getColor('params')" class="pointer">Quality Parameter</li>
+                        <li @click="handleWindow('https://www.federalreserve.gov/monetarypolicy/openmarket.htm')" class="pointer" :style="getColor()">News</li>
                     </ul>
                 </div>
             </div>
-            <p class="pointer underline-anim" @click="handleWindow('https://hellopuregold.bullionview.com/web')" 
+            <p class="pointer underline-anim" @click="handleRoute('/live-rate')"
                 :style="getColor()">Live rate</p>
             <p class="pointer underline-anim" @click="handleRoute('/e-book')" 
                 :style="getColor()">E books</p>
@@ -40,11 +41,11 @@
                         <li @click.self="handleRoute('/economic-rings')" :style="getColor('economic')" class="pointer">Economic rings</li>
                         <li @click.self="handleRoute('/functional-links')" :style="getColor('functional')" class="pointer">Functional links</li>
                         <li @click.self="handleRoute('/videos')" :style="getColor('videos')" class="pointer">Videos</li>
-                        <li :style="getColor('params')" class="pointer">Zakat calculator</li>
+                        <li @click.self="handleRoute('/zakat')" :style="getColor('zakat')" class="pointer">Zakat calculator</li>
                     </ul>
                 </div>
             </div>
-            <p class="pointer underline-anim" @click="scrollInto('footer')" 
+            <p class="pointer underline-anim" @click="handleRoute('/contact-us')"
                 :style="getColor()">Contact Us</p>
         </div>
     </div>

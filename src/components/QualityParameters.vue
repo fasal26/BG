@@ -81,19 +81,19 @@
                     <td>660</td>
                     <td>2.70</td>
                 </tr>
-                <tr>
+                <tr style="background-color: #a8a3a3;">
                     <td>Silver</td>
                     <td>Ag</td>
                     <td>962</td>
                     <td>10.49</td>
                 </tr>
-                <tr>
+                <tr style="background-color: #ffb100;">
                     <td>Gold </td>
                     <td>Au</td>
                     <td>1064</td>
                     <td>19.3</td>
                 </tr>
-                <tr>
+                <tr style="background-color: #7a45c2;">
                     <td>Copper</td>
                     <td>Cu</td>
                     <td>1085</td>

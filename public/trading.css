@@ -167,3 +167,18 @@ th {
 .route-padd{
     padding: 150px 120px 0;
 }
+
+.tradingview-widget-container{
+    padding: 0 100px 100px;
+}
+
+.tradingview-widget-container-slide{
+    width: 45%;
+    margin: auto;
+}
+
+.tradingview-widget-container > h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}

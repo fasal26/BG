@@ -27,6 +27,9 @@ const GoldBuyingTime = () => import("../components/GoldBuyingTime.vue")
 const FunctionalLinks = () => import("../components/FunctionalLinks.vue")
 const EconomicRings = () => import("../components/EconomicRings.vue")
 const YoutubeVideos = () => import("../components/YoutubeVideos.vue")
+const Zakat = () => import("../components/Zakat.vue")
+const LiveRate = () => import("../components/LiveRate.vue")
+const ContactUS = () => import("../components/ContactUs.vue")
 export function createRouter() {
     const router =  _createRouter({
         history: createWebHistory('/BG/'),
@@ -51,6 +54,9 @@ export function createRouter() {
             { path: "/functional-links", name: 'Functional Links', component: FunctionalLinks },
             { path: "/economic-rings", name: 'Economic Rings', component: EconomicRings },
             { path: "/videos", name: 'Videos', component: YoutubeVideos },
+            { path: "/Zakat", name: 'Zakat Calculator', component: Zakat },
+            { path: "/live-rate", name: 'Live rate', component: LiveRate },
+            { path: "/contact-us", name: 'Contact Us', component: ContactUS },
             // { path: '/:pathMatch(.*)*', redirect: "/" },
         ],
         scrollBehavior() {

@@ -194,14 +194,11 @@ p {
 }
 
 input{
-    font-family: var(--font-family);
-    padding-left: 15px;
-    border: 1px solid #CCCCCC;
-    border-radius: 5px;
-    height: 35px;
-    width: 50%;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  font-family: var(--font-family);
+  padding-left: 15px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  height: 45px;
 }
 
 input::placeholder {

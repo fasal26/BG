@@ -136,18 +136,21 @@
           <div class="srvc-img">
             <Carousel :items-to-show="1" :autoplay="2000" :wrap-around="true">
                 <Slide key="1">
-                    <div class="carousel__item">
+                    <div class="carousel__item pointer" @click="handleRoute('/services?id=1')">
                         <img src="/assets/assay2.jpg" class="sv-img" alt="gold" />
+                        <p>Designing the Gold and Silver Refinery Feasibility and Setup</p>
                     </div>
                 </Slide>
                 <Slide key="2">
-                    <div class="carousel__item">
+                    <div class="carousel__item pointer" @click="handleRoute('/services?id=2')">
                         <img src="/assets/refinary.jpg" class="sv-img" alt="gold" />
+                        <p>Designing the Gold and Silver Assay Lab</p>
                     </div>
                 </Slide>
                 <Slide key="3">
-                    <div class="carousel__item">
+                    <div class="carousel__item pointer" @click="handleRoute('/services?id=3')">
                         <img src="/assets/valueaddedplant.jpg" class="sv-img" alt="gold" />
+                        <p>Designing the Value Addition Plant for Ingot Bars</p>
                     </div>
                 </Slide>
             </Carousel>

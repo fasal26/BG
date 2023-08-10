@@ -12,7 +12,7 @@
               </div>
           </div>
       </div> -->
-      <div class="baba-srvc-conatiner" v-for="(item,i) in servcArr" :key="i">
+      <div class="baba-srvc-conatiner" v-for="(item,i) in servcArr" :key="i" :id="`srvc${i}`">
             <h3>{{ item.heading }}</h3>
             <div class="baba-flex srv-parent">
                 <div class="srvc-img">
@@ -39,13 +39,23 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 import { servcArr } from "../composables/services.js"
 import { useRoute } from "vue-router";
 
 const route = useRoute()
 
 let selectSer = ref({})
+onMounted(() => {
+    if(route.query.id && route.query.id != 1){
+        let el = document.getElementById(`srvc${route.query.id - 1}`)
+        setTimeout(() => {
+            el.scrollIntoView({
+                behavior: "smooth"
+            })
+        }, 100);
+    }
+})
 // const slctSrvc = servcArr.value.find(_ => _.id == route.params.id)
 // if(slctSrvc) selectSer.value = slctSrvc
 </script>
