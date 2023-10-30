@@ -60,7 +60,7 @@
                 <img class="pointer" width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png" alt="youtube-play"/>
             </div>
             <div class="store">
-                <a href="https://apps.apple.com/in/app/baba-gold-bullion/id1672543619" rel="noopener" target="_blank">
+                <a href="https://play.google.com/store/apps/details?id=com.artifitia.baba_gold_app" rel="noopener" target="_blank">
                     <img class="pointer" src="https://img.litedev.com/images/static/play-store.svg" alt="youtube-play"/>
                 </a> 
                 <a href="https://apps.apple.com/in/app/baba-gold-bullion/id1672543619" rel="noopener" target="_blank">

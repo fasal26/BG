@@ -33,8 +33,9 @@ let formReq = reactive({
     subject: "",
     msg: ""
 })
+let number = "971568835211"
 //todo
-let url = computed(() => `https://api.whatsapp.com/send?phone=917034841212&text=${encodeURIComponent(`Name: ${formReq.name}\nEmail: ${formReq.email}\nSubject: ${formReq.subject}\nMessage: ${formReq.msg}`)}`)
+let url = computed(() => `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(`Name: ${formReq.name}\nEmail: ${formReq.email}\nSubject: ${formReq.subject}\nMessage: ${formReq.msg}`)}`)
 
 </script>
 
