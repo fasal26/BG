@@ -4,7 +4,7 @@ const servcArr = ref([
     {
         id: "ser1",
         heading: "Designing the Gold and Silver Refinery Feasibility and Setup",
-        img: "/BG/assets/assay2.jpg",
+        img: "/assets/assay2.jpg",
         content1: [
             {
                 heading: "Comprehensive Refinery Design",
@@ -53,7 +53,7 @@ const servcArr = ref([
     {
         id: "ser2",
         heading: "Designing the Gold and Silver Assay Lab",
-        img: "/BG/assets/refinary.jpg",
+        img: "/assets/refinary.jpg",
         content1: [
             {
                 heading: "Laboratory Layout",
@@ -102,7 +102,7 @@ const servcArr = ref([
     {
         id: "ser3",
         heading: "Designing the Value Addition Plant for Ingot Bars",
-        img: "/BG/assets/valueaddedplant.jpg",
+        img: "/assets/valueaddedplant.jpg",
         content1: [
             {
                 heading: "Standard Bullion Bars",

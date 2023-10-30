@@ -32,7 +32,7 @@ const LiveRate = () => import("../components/LiveRate.vue")
 const ContactUS = () => import("../components/ContactUs.vue")
 export function createRouter() {
     const router =  _createRouter({
-        history: createWebHistory('/BG/'),
+        history: createWebHistory(''),
         // base: '/baba-gold-website/',
         routes: [
             { path: "/", name: 'HomePage', component: HomePage },
