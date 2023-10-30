@@ -106,7 +106,8 @@
 
 .nav-container {
   position: relative;
-  left: 58%;
+  /* left: 58%; */
+  transform: translate(74%, 0);
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -184,7 +185,7 @@
 .banner-container > h1{
   position: absolute;
   color: #ffffff;
-  top: 45%;
+  top: 35%;
   font-size: 50px;
   max-width: 49%;
   left: 30px;
