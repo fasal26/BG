@@ -76,6 +76,7 @@
 
     .baba-svc-container > h2 {
         padding: 30px 0;
+        font-size: 31px;
     }
 
     .card {
@@ -207,6 +208,64 @@
     .baba-srvc-conatiner {
         margin-bottom: 30px;
     }
+
+    .tradingview-widget-container{
+        padding: 0;
+        height: initial;
+    }
+
+    .ebook-list {
+        padding: 0;
+        flex-direction: column;
+        background: transparent;
+    }
+
+    .ebook-item{
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    .timing-container{
+        margin-top: 30px;
+    }
+    
+    .links-container{
+        flex-direction: column;
+        padding: 0;
+        background: transparent;
+    }
+
+    .links-container .links{
+        box-shadow: none;
+        background: #fff;
+    }
+
+    .youtube-list{
+        flex-direction: column;
+    }
+
+    .youtube-list > iframe{
+        flex-basis: initial;
+    }
+
+    th{
+        color: var(--sa-custom-v1);
+        font-size: 12px;
+        background-color: #f2f2f2;
+    }
+
+    th, td {
+        padding: 9px 7px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    table input{
+        width: 100%;
+        height: 35px;
+    }
+
 
     /* THE END */
 

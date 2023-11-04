@@ -25,7 +25,29 @@
                         <li @click.self="handleRoute('/quality-params')" :style="getColor('params')" class="pointer">Quality Parameter</li>
                     </ul>
                 </div>
-                <div class="dialog-items doc-flex" @click="scrollInto('footer')">
+                <div class="dialog-items doc-flex" @click="handleRoute('/live-rate')">
+                    <img src="../Assets/blog.svg" alt="">
+                    <p>Live rate</p>
+                </div>
+                <div class="dialog-items doc-flex" @click="handleRoute('/e-book')">
+                    <img src="../Assets/blog.svg" alt="">
+                    <p>E books</p>
+                </div>
+                <div class="dialog-items doc-flex" @click="hndlDrpDwn('isMore')">
+                    <img src="../Assets/blog.svg" alt="">
+                    <p>More</p>
+                    <img src="../Assets/down-arrow-wh.png" alt="">
+                </div>
+                <div class="drp-dwn-container" :style="getColor('background')" v-if="isMore">
+                    <ul>
+                        <li @click.self="handleRoute('/buy-gold')" :style="getColor('gold')" class="pointer" >Auspicious time to buy gold</li>
+                        <li @click.self="handleRoute('/economic-rings')" :style="getColor('economic')" class="pointer">Economic rings</li>
+                        <li @click.self="handleRoute('/functional-links')" :style="getColor('functional')" class="pointer">Functional links</li>
+                        <li @click.self="handleRoute('/videos')" :style="getColor('videos')" class="pointer">Videos</li>
+                        <li @click.self="handleRoute('/zakat')" :style="getColor('zakat')" class="pointer">Zakat calculator</li>
+                    </ul>
+                </div>
+                <div class="dialog-items doc-flex" @click="handleRoute('/contact-us')">
                     <img src="../Assets/contact-mail.svg" alt="">
                     <p>Contact Us</p>
                 </div>
@@ -43,6 +65,7 @@ const route = useRoute()
 
 const target = ref(null)
 let isTrading = ref(false)
+let isMore = ref(false)
 onClickOutside(target, (event) => {
     let displayFlg = document.getElementById('dlg')
     displayFlg.style.display = 'none'
@@ -64,9 +87,8 @@ function handleRoute(path){
         document.body.style.overflow = 'auto'
 }
 function hndlDrpDwn(flg){
-    if(flg == 'isTrading'){
-        isTrading.value = !isTrading.value
-    }
+    isTrading.value = flg == 'isTrading' && !isTrading.value
+    isMore.value = flg == 'isMore' && !isMore.value
 }
 function getColor(type){
     if(route.path != '/'){

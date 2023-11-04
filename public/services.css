@@ -106,6 +106,13 @@
     flex-wrap: wrap;
 }
 
+.ebook-list a{
+    text-decoration: none;
+    color: inherit;
+    background: transparent;
+    border: none;
+}
+
 .ebook-item{
     flex: 1 0 20%;
     display: flex;

@@ -9,3 +9,13 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+  .ebook-list {
+    padding: 25px;
+    flex-direction: column;
+    background: #ffffff;
+  }
+}
+</style>

@@ -106,8 +106,7 @@
 
 .nav-container {
   position: relative;
-  /* left: 58%; */
-  transform: translate(74%, 0);
+  left: 82%;
   z-index: 1;
   display: flex;
   justify-content: center;

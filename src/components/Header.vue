@@ -1,10 +1,10 @@
 <template>
     <div class="doc-banner-container" id="doc-banner">
             <!-- <img src="../Assets/WhatsApp Image 2023-06-06 at 14.10.30.jpg" alt=""> -->
-        <div class="docdet-mob doc-padding" @click="openMenu">
+        <div class="docdet-mob doc-padding " @click="openMenu">
             <img src="../Assets/bars-staggered.png" alt="menu" class="navbar_menu" id="burger">
         </div>
-        <img src="../Assets/babagoldtrans.png" alt="" class="logo">
+        <img src="../Assets/babagoldtrans.png" alt="" class="logo pointer" @click="handleRoute('/')">
         <div class="doc-flex nav-container">
             <p class="pointer underline-anim" :class="$route.name && $route.name.includes('HomePage') ? 'route-active' : ''" @click="handleRoute('/')" 
                 :style="getColor() ">Home</p>
